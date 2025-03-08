@@ -8,7 +8,7 @@ namespace tpModul4_103022300088
 {
     class KodePos
     {
-        public enum Daerah 
+        public enum Daerah
         {
             Batununggal, Kujangsari, Mengger, Wates, Cijaura, Jatisari, Margasari, Sekejati, Kebonwaru, Maleer, Samoja
         }
@@ -18,4 +18,4 @@ namespace tpModul4_103022300088
             return KodePos[(int)daerah];
         }
     }
-}   
+}

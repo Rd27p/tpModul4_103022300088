@@ -18,6 +18,17 @@ namespace tpModul4_103022300088
                 string namaDaerah = daerah.ToString();
                 Console.WriteLine($"{namaDaerah,-12} {KodePos.getKodePos(daerah)}");
             }
+
+            DoorMachine pintu = new DoorMachine();
+            Console.WriteLine("\nSimulasi Perubahan Pintu");
+            pintu.ActivateTrigger(DoorMachine.Trigger.BUKA_PINTU);
+            Console.WriteLine($"Pintu sekarang: {pintu.CurrentState}");
+            pintu.ActivateTrigger(DoorMachine.Trigger.KUNCI_PINTU);
+            Console.WriteLine($"Pintu sekarang: {pintu.CurrentState}");
+            pintu.ActivateTrigger(DoorMachine.Trigger.KUNCI_PINTU);
+            Console.WriteLine($"Pintu sekarang: {pintu.CurrentState}");
+            pintu.ActivateTrigger(DoorMachine.Trigger.BUKA_PINTU);
+            Console.WriteLine($"Pintu sekarang: {pintu.CurrentState}");
         }
     }
 }
